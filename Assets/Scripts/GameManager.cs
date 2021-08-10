@@ -12,16 +12,15 @@ public class GameManager : MonoBehaviour {
     [SerializeField]
     RotateSphere sphereOnFixedUpdate;
 
-    // Update is called once per frame
     void Update () {
-        sphere.Rotate ();
+        sphere.Rotate (); // Inner black sphere
     }
 
     void FixedUpdate () {
-        sphereOnFixedUpdate.Rotate ();
+        sphereOnFixedUpdate.Rotate (); // Outer black sphere
     }
 
     void OnGUI () {
-        sphereOnGui.Rotate ();
+        sphereOnGui.Rotate (); // Yellow sphere
     }
 }

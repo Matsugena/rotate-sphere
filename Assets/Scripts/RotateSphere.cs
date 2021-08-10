@@ -11,7 +11,7 @@ public class RotateSphere : MonoBehaviour {
     public void Rotate () {
         if (center == null) return;
 
-        // 画面中心を軸に回転させる
+        // Rotate around the center of (0,0,0)
         this.transform.RotateAround (
             center,
             Vector3.forward,
